@@ -10,15 +10,22 @@ header {
 #sidebar-nav {
 	margin: 0;
 	padding: 0;
-	width: 15%;
-	position: fixed;
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+#sidebar-nav ul {
+	text-align: center;
 }
 
 #sidebar-nav li {
+	display: inline-block;
+	margin: 1em 0;
+	padding: 1em;
 	text-align: center;
 	list-style: none;
 	background-color: #4077ad;
-	margin: 0 0 .5em .5em;
 }
 
 #sidebar-nav a {
@@ -82,9 +89,6 @@ footer address {
 	}
 
 	#sidebar-nav {
-		width: 100%;
-		height: auto;
-		position: relative;
 	}
 
 	#sidebar-nav ul {
@@ -92,10 +96,7 @@ footer address {
 	}
 
 	#sidebar-nav li {
-		display: inline-block;
-		margin: 1em 0;
-		padding: 1em;
-		text-align: center;
+		
 	}
 
 	#sidebar-nav a {
@@ -109,7 +110,6 @@ footer address {
 		width: 95%;
 	}
 
-	
 }
 
 
