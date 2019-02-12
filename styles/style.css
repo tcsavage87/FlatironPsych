@@ -3,46 +3,84 @@
 	padding: 0;
 }
 
+:root {
+	--mainBlue: #4077ad;
+	--lightBlue: lightblue;
+	--mainWhite: white;
+}
+
 header {
 	text-align: center;
 }
 
-#sidebar-nav {
+nav {
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	height: auto;
-	position: relative;
 }
 
-#sidebar-nav ul {
+nav ul {
 	text-align: center;
+	margin: 1em 0;
 }
 
-#sidebar-nav li {
+nav > ul > li {
 	display: inline-block;
-	margin: 1em 0;
-	padding: 1em;
 	text-align: center;
 	list-style: none;
-	background-color: #4077ad;
+	background-color: var(--mainBlue);
 }
 
-#sidebar-nav a {
-	color: white;
+nav a {
+	color: var(--mainWhite);
 	text-decoration: none;
 	display: block;
-	width: 100%;
+	padding: 1em;
 }
 
-#sidebar-nav a:hover {
-	color: lightblue;
+nav a:hover {
+	background: #2c3e50;
+	color: var(--lightBlue);
 	cursor: pointer;
 }
 
-#sidebar-nav .active {
-	color: lightblue;
+.active {
+	background: #2c3e50;
+	color: var(--lightBlue);
 }
+
+/* Nested dropdown */
+
+.dropdown {
+	display: none;
+	position: absolute;
+	margin: 0;
+	border: 1px solid black;
+}
+
+.dropdown-item {
+	display: block;
+	text-decoration: none;
+	list-style: none;
+}
+
+.dropdown li > a {
+	display: block;
+	background: grey;
+	color: black;
+}
+
+.dropdown a:hover {
+	background: #2c3e50;
+	color: var(--lightBlue);
+}
+
+ul li:hover .dropdown {
+	display: block;
+}
+
+/* Main styling */
 
 main {
 	margin-left: 16%;
@@ -80,7 +118,7 @@ footer address {
 
 #footer-nav a {
 	text-decoration: none;
-	color: #4077ad;
+	background-color: var(--mainBlue);
 	cursor: pointer;
 }
 
@@ -88,21 +126,57 @@ footer address {
 
 .accordion-toggle {
 	cursor: pointer;
+	text-align: center;
+	background: grey;
+	border: 1px solid black;
+	padding: 10px;
+	width: 80%;
+	margin: auto;
 }
 
 .accordion-content {
 	display: none;
+	width: 80%;
+	margin: auto;
 }
 
 .centered {
 	text-align: center;
 }
 
+/* Specialties page */
+
 .specialties-ul {
-	
+	width: 40%;
+	margin: 1em auto;
+	list-style: none;
+}
+
+.specialties-ul li {
+	background: grey;
+	border: 1px solid black;
+	margin: .5em;
+}
+
+.specialties-ul li a {
+	text-decoration: none;
+	color: var(--mainWhite);
+	background-color: var(--mainBlue);
+	display: block;
+	padding: 10px;
 }
 
 
+/* Location */
+
+iframe.centered {
+	display: block;
+	margin: auto;
+}
+
+footer {
+	margin: 1em 0 2em 0;
+}
 
 @media screen and (max-width: 768px) {
 	header img {
@@ -122,8 +196,6 @@ footer address {
 	}
 
 	#sidebar-nav a {
-		margin: 0;
-		padding: 0;
 		display: inline-block;
 	}
 

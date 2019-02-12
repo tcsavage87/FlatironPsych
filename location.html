@@ -4,6 +4,7 @@
 <head>
   <title>Flatiron Psych Group</title>
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
 </head>
@@ -12,10 +13,16 @@
   <header>
     <a href="index.html"><img src="Images/Banner.jpg"></a>
   </header>
-  <nav id="sidebar-nav">
+  <nav>
     <ul>
       <li><a href="./index.html">Home</a></li>
-      <li><a href="./specialties.html">Specialties</a></li>
+      <li><a href="./specialties.html">Specialties</a>
+        <ul class="dropdown">
+          <li class="dropdown-item"><a href="./specialties/problems.html">Problems Treated</a></li>
+          <li class="dropdown-item"><a href="./specialties/people.html">People Served</a></li>
+          <li class="dropdown-item"><a href="./specialties/psychological.html">Psychological Testing</a></li>
+        </ul>
+      </li> 
       <li><a href="./staff.html">Staff</a></li>
       <li><a class="active" href="./location.html">Location</a></li>
       <li><a href="./fees.html">Fees</a></li>
@@ -25,8 +32,8 @@
 
   <main>
     <h1>Location</h1>
-    <p>Our offices are located at 75 Manhattan Drive, Suite 204, Boulder, CO, 80303.</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48914.184712177164!2d-105.21982519734263!3d39.98305381942879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876bed7885f78bdd%3A0x244ce7f2bb28ce1!2s75+Manhattan+Dr%2C+Boulder%2C+CO+80303!5e0!3m2!1sen!2sus!4v1549421754043" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <p class="centered">Our offices are located at 75 Manhattan Drive, Suite 204, Boulder, CO, 80303.</p>
+    <iframe class="centered" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48914.184712177164!2d-105.21982519734263!3d39.98305381942879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876bed7885f78bdd%3A0x244ce7f2bb28ce1!2s75+Manhattan+Dr%2C+Boulder%2C+CO+80303!5e0!3m2!1sen!2sus!4v1549421754043" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     <p>This location is conveniently located near the Foothills Parkway exit of U.S. Route 36 just off of Table Mesa Drive/ South Boulder Road. On site free parking is available.</p>
   </main>
   

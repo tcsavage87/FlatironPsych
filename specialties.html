@@ -4,6 +4,7 @@
 <head>
   <title>Flatiron Psych Group</title>
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
 </head>
@@ -15,19 +16,24 @@
   <nav id="sidebar-nav">
     <ul>
       <li><a href="./index.html">Home</a></li>
-      <li><a class="active" href="./specialties.html">Specialties</a></li>
+      <li><a class="active" href="./specialties.html">Specialties</a>
+        <ul class="dropdown">
+          <li class="dropdown-item"><a href="./specialties/problems.html">Problems Treated</a></li>
+          <li class="dropdown-item"><a href="./specialties/people.html">People Served</a></li>
+          <li class="dropdown-item"><a href="./specialties/psychological.html">Psychological Testing</a></li>
+        </ul>
+      </li> 
       <li><a href="./staff.html">Staff</a></li>
       <li><a href="./location.html">Location</a></li>
       <li><a href="./fees.html">Fees</a></li>
       <li><a href="./appointments.html">Appointments</a></li>
     </ul>
   </nav>
-
   <main>
     <h1>Specialties</h1>
-    <ul>
+    <ul class="specialties-ul centered">
       <li><a href="./specialties/problems.html">Problems Treated</a></li>
-      <li><a href="./specialties/people.html">People Served<a></li>
+      <li><a href="./specialties/people.html">People Served</a></li>
       <li><a href="./specialties/psychological.html">Psychological Testing</a></li>
     </ul>
     <p>Our staff has a broad range of experience in handling most issues related to emotional problems. We use short-term solution focused therapy to deal with problems and enhance your life through the use of cognitive-behavioral therapy (C.B.T.) and other cutting edge technology including biofeedback.</p>
