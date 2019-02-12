@@ -36,8 +36,12 @@ header {
 }
 
 #sidebar-nav a:hover {
-	color: black;
+	color: lightblue;
 	cursor: pointer;
+}
+
+#sidebar-nav .active {
+	color: lightblue;
 }
 
 main {
@@ -78,6 +82,24 @@ footer address {
 	text-decoration: none;
 	color: #4077ad;
 	cursor: pointer;
+}
+
+/* Accordion styles */
+
+.accordion-toggle {
+	cursor: pointer;
+}
+
+.accordion-content {
+	display: none;
+}
+
+.centered {
+	text-align: center;
+}
+
+.specialties-ul {
+	
 }
 
 
