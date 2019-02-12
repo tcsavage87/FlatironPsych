@@ -1,12 +1,14 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: 'Playfair Display', serif;
 }
 
 :root {
 	--mainBlue: #4077ad;
 	--lightBlue: lightblue;
 	--mainWhite: white;
+	--darkBlue: #2c3e50;
 }
 
 header {
@@ -40,13 +42,15 @@ nav a {
 }
 
 nav a:hover {
-	background: #2c3e50;
+	background: var(--darkBlue);
 	color: var(--lightBlue);
 	cursor: pointer;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
 }
 
 .active {
-	background: #2c3e50;
+	background: var(--darkBlue) !important;
 	color: var(--lightBlue);
 }
 
@@ -57,6 +61,7 @@ nav a:hover {
 	position: absolute;
 	margin: 0;
 	border: 1px solid black;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .dropdown-item {
@@ -67,13 +72,14 @@ nav a:hover {
 
 .dropdown li > a {
 	display: block;
-	background: grey;
-	color: black;
+	background: var(--mainBlue);
+	color: var(--mainWhite);
 }
 
 .dropdown a:hover {
 	background: #2c3e50;
 	color: var(--lightBlue);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 ul li:hover .dropdown {
@@ -86,6 +92,7 @@ main {
 	margin-left: 16%;
 	margin-right: 16%;
 	width: 68%;
+	border-bottom: 2px solid var(--mainBlue);
 }
 
 main h1 {
@@ -100,28 +107,6 @@ main ul {
 	margin: 1em 0 1em 3em;
 }
 
-footer {
-	text-align: center;
-}
-
-footer address {
-	margin: .5em 0;
-}
-
-#footer-nav ul {
-	list-style: none;
-}
-
-#footer-nav li {
-	display: inline;
-}
-
-#footer-nav a {
-	text-decoration: none;
-	background-color: var(--mainBlue);
-	cursor: pointer;
-}
-
 /* Accordion styles */
 
 .accordion-toggle {
@@ -132,6 +117,11 @@ footer address {
 	padding: 10px;
 	width: 80%;
 	margin: auto;
+}
+
+.accordion-toggle:hover {
+	background: var(--darkBlue);
+	color: var(--lightBlue);
 }
 
 .accordion-content {
@@ -174,29 +164,38 @@ iframe.centered {
 	margin: auto;
 }
 
+/* Footer */
+
 footer {
 	margin: 1em 0 2em 0;
+	text-align: center;
 }
+
+.border-below {
+	font-size: .75em;
+}
+
+address {
+	margin: .5em 0;
+}
+
+address p.bold {
+	font-weight: bold;
+}
+
+address p {
+	font-style: normal;
+}
+
+#copyright {
+	font-size: .75em;
+}
+
 
 @media screen and (max-width: 768px) {
 	header img {
 		width: 100%;
 		height: auto;
-	}
-
-	#sidebar-nav {
-	}
-
-	#sidebar-nav ul {
-		text-align: center;
-	}
-
-	#sidebar-nav li {
-		
-	}
-
-	#sidebar-nav a {
-		display: inline-block;
 	}
 
 	main {
