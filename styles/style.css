@@ -288,6 +288,14 @@ iframe.centered {
 		margin: 0 auto;
 	}
 
+	nav ul {
+		margin: 0;
+	}
+
+	nav ul > li {
+		margin-top: 5px;
+	}
+
 	.accordion {
 		width: 100%;
 	}
