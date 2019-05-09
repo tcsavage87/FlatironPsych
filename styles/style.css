@@ -17,26 +17,27 @@ header {
 }
 
 #header-img {
+	height: 60vh;
 	width: 100%;
 }
 
 nav {
 	margin: 0;
-	padding: 10px;
 	width: 100%;
-	height: ;
+	height: 10vh;
 	background-color: var(--darkBlue);
 }
 
 nav ul {
+	padding: 10px 0;
 	text-align: right;
 	background-color: var(--darkBlue);
-
 }
 
 nav > ul > li {
 	display: inline-block;
 	text-align: center;
+	vertical-align: center;
 	list-style: none;
 }
 
@@ -103,10 +104,41 @@ main {
 	width: 75%;
 	margin: 0 auto;
 	padding: 1em;
-	/*border-bottom: 2px solid var(--mainBlue);*/
+}
+
+#main-hero {
+	height: 30vh;
 }
 
 main h1 {
+	text-align: center;
+	padding: 10px;
+}
+
+main button {
+	text-align: center;
+	padding-top: 1em;
+}
+
+#subheader {
+	text-align: center;
+}
+
+#button-div {
+	padding-top: 10px;
+	text-align: center;
+}
+
+#main-button {
+	color: white;
+	background-color: var(--darkBlue);
+	text-align: center;
+	margin: 0 auto;
+	font-size: 1em;
+	padding: 1em;
+}
+
+main h3 {
 	text-align: center;
 }
 
