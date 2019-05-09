@@ -1,6 +1,33 @@
 <!DOCTYPE html>
 <html>
 
+<!-- 
+  Button Banner with Title left and Buttons right
+  Image at top with overlayed Flatiron Psych Group - serif font
+  Motto
+  Serving Denver/Boulder area
+  Appointments Button
+  Homepage Text
+
+  Ribbon - no borders or hover effect, illuminate Appointments button
+
+  Condense to Hamburger Menu - on click overlay
+
+
+  Footer 
+
+    Separate contact footer from address footer
+
+    Add second Denver location address to footer
+
+    Leave Fax as placeholder, replace with PH, update later
+
+
+  Staff
+    Kim will rewrite bio
+
+-->
+
 <head>
   <meta charset="UTF-8">
   <title>Flatiron Psych Group</title>
@@ -11,9 +38,6 @@
 </head>
 
 <body>
-  <header>
-    <a href="index.html"><img src="Images/Banner.jpg"></a>
-  </header>
   <nav>
     <ul>
       <li><a class="active" href="./index.html">Home</a></li>
@@ -21,15 +45,19 @@
         <ul class="dropdown">
           <li class="dropdown-item"><a href="./specialties/problems.html">Problems Treated</a></li>
           <li class="dropdown-item"><a href="./specialties/people.html">People Served</a></li>
-          <li class="dropdown-item"><a href="./specialties/psychological.html">Psychological Testing</a></li>
         </ul>
       </li> 
       <li><a href="./staff.html">Staff</a></li>
       <li><a href="./location.html">Locations</a></li>
       <li><a href="./fees.html">Fees</a></li>
-      <li><a href="./appointments.html">Appointments</a></li>
+      <li><a id="appointments" href="./appointments.html">Appointments</a></li>
     </ul>
   </nav>
+  <header>
+    <a href="index.html"><img id="header-img" src="Images/New Banner.jpg" /></a>
+  </header>
+  <div class="body-div">
+  
 
   <main>
     <div class="main-content">
@@ -39,15 +67,19 @@
       <li>anxiety</li>
       <li>depression</li>
       <li>obsessive thinking</li>
+      <li>compulsive behaviors</li>
       <li>problematic relationships</li>
       <li>sexual dysfunction</li>
       <li>sleep disorders</li>
-      <li>substance abuse</li>
+      <li>eating disorders</li>
+      <li>stress reduction</li>
+      <li>anger management</li>
     </ul>
     <p>Many patients appreciate our method because it focuses on problems that they are facing immediately so that relief comes in a timely fashion.</p>
     <p>Anyone who wants to improve their life can benefit. A therapist can be of great assistance in dealing with many of the problems that are all too common in today's modern world.</p>
     </div>
   </main>
+  </div>
 
   <footer>
     <p class="border-below">To find out more or to schedule an appointment with one of our psychologists, please <a href="mailto:questions@flatironpsych.com">e-mail us.</a></p>
@@ -55,7 +87,7 @@
 			<p class="bold">Flatiron Psych Group</p>
 			<p>75 Manhattan Drive, Suite 204</p>
 			<p>Boulder, CO 80303</p>
-			<p>FX 646-895-7647</p>
+			<p>PH</p>
 		</address>
     <p id="copyright">Copyright &#169; 2007-2019 Flatiron Psych Group</p>
   </footer>

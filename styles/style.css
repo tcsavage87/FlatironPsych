@@ -6,32 +6,38 @@
 
 :root {
 	--mainBlue: #4077ad;
-	--lightBlue: lightblue;
+	--lightBlue: #1792f3;
 	--mainWhite: white;
 	--darkBlue: #2c3e50;
 }
 
 header {
 	text-align: center;
+	margin: 0;
+}
+
+#header-img {
+	width: 100%;
 }
 
 nav {
 	margin: 0;
-	padding: 0;
+	padding: 10px;
 	width: 100%;
-	height: auto;
+	height: ;
+	background-color: var(--darkBlue);
 }
 
 nav ul {
-	text-align: center;
-	margin: 1em 0;
+	text-align: right;
+	background-color: var(--darkBlue);
+
 }
 
 nav > ul > li {
 	display: inline-block;
 	text-align: center;
 	list-style: none;
-	background-color: var(--mainBlue);
 }
 
 li a {
@@ -42,21 +48,22 @@ li a {
 	text-shadow: 1px 1px 1px black;
 }
 
+#appointments {
+	background-color: var(--mainWhite);
+	padding: .5em .75em;
+	margin-right: 2em;
+	color: var(--mainBlack);
+	text-shadow: none;
+}
+
 nav a:hover {
-	background: var(--darkBlue);
-	color: var(--lightBlue);
 	cursor: pointer;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 i.fa-caret-down {
 	padding-left: 5px;
 }
 
-.active {
-	background: var(--darkBlue) !important;
-	color: var(--lightBlue);
-}
 
 /* Nested dropdown */
 
@@ -64,7 +71,6 @@ i.fa-caret-down {
 	display: none;
 	position: absolute;
 	margin: 0;
-	border: 1px solid black;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -76,28 +82,28 @@ i.fa-caret-down {
 
 .dropdown li > a {
 	display: block;
-	background: var(--mainBlue);
+	background: var(--darkBlue);
 	color: var(--mainWhite);
-}
-
-.dropdown a:hover {
-	background: #2c3e50;
-	color: var(--lightBlue);
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 ul li:hover .dropdown {
 	display: block;
+} 
+
+.body-div {
+	background-color: whitesmoke;
 }
 
+footer {
+	background-color: lightgrey;
+}
 /* Main styling */
 
 main {
 	width: 75%;
 	margin: 0 auto;
 	padding: 1em;
-	border-bottom: 2px solid var(--mainBlue);
-	/* background-color: lightgrey; */
+	/*border-bottom: 2px solid var(--mainBlue);*/
 }
 
 main h1 {
@@ -112,6 +118,7 @@ main p {
 main ul {
 	width: 90%;
 	margin: 0 auto;
+	list-style-type: ;
 }
 
 main ul li {
@@ -119,12 +126,15 @@ main ul li {
 	margin: 1em;
 }
 
+main ul li:before {
+}
+
 /* Footer */
 
 footer {
 	padding: 1.5em 0 1.5em 0;
 	text-align: center;
-	/* background-color: lightgrey; */
+	background-color: var(--lightBlue);
 }
 
 .border-below {
@@ -213,13 +223,15 @@ address p {
 
 /* Staff */
 
+
+
 span.bold {
 	font-weight: bold;
 }
 
 .staff-section img {
-	float: right;
-	padding-left: 10px;
+	float: left;
+	padding-right: 10px;
 }
 
 /* Location */
