@@ -18,7 +18,16 @@ header {
 
 #header-img {
 	height: 60vh;
-	width: 100%;
+	background: url("../Images/New Banner.jpg") no-repeat center;
+	background-size: cover;
+}
+
+#header-img > h1 {
+	color: var(--mainWhite);
+	text-align: center;
+	padding-top: 1em;
+	font-size: 4em;
+	text-shadow: 1px 1px 1px black;
 }
 
 nav {
@@ -47,6 +56,11 @@ li a {
 	display: block;
 	padding: 1em;
 	text-shadow: 1px 1px 1px black;
+}
+
+#nav-brand {
+	text-align: left;
+	padding-right: 35%;
 }
 
 #appointments {
@@ -95,15 +109,11 @@ ul li:hover .dropdown {
 	background-color: whitesmoke;
 }
 
-footer {
-	background-color: lightgrey;
-}
 /* Main styling */
 
 main {
 	width: 75%;
 	margin: 0 auto;
-	padding: 1em;
 }
 
 #main-hero {
@@ -112,12 +122,7 @@ main {
 
 main h1 {
 	text-align: center;
-	padding: 10px;
-}
-
-main button {
-	text-align: center;
-	padding-top: 1em;
+	padding: .5em 0;
 }
 
 #subheader {
@@ -125,7 +130,6 @@ main button {
 }
 
 #button-div {
-	padding-top: 10px;
 	text-align: center;
 }
 
@@ -135,15 +139,16 @@ main button {
 	text-align: center;
 	margin: 0 auto;
 	font-size: 1em;
+	margin-top: 1em;
 	padding: 1em;
 }
 
-main h3 {
+main h2 {
 	text-align: center;
 }
 
 main p {
-	margin: 1em 0;
+	padding: .5em 0 1em;
 	line-height: 1.5em;
 }
 
@@ -166,7 +171,9 @@ main ul li:before {
 footer {
 	padding: 1.5em 0 1.5em 0;
 	text-align: center;
-	background-color: var(--lightBlue);
+	color: var(--darkBlue);
+	height: 20vh;
+	background-color: var(--mainBlue);
 }
 
 .border-below {
